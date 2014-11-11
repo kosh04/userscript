@@ -10,7 +10,6 @@
 // @match     http://dic.nicovideo.jp/p/l/*
 // @match     http://dic.nicovideo.jp/p/u/*
 // @match     http://dic.nicovideo.jp/p/c/*
-// @require   none
 // @author    kosh (mono)
 // @license   Public domain
 // ==/UserScript==
