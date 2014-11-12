@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name      Nicopedia Resanchor Popup
+// @name      Nicopedia-Resanchor-Popup
 // @namespace http://lambda.que.jp/
 // @version   0.1.20141112
 // @description  ニコニコ大百科 掲示板のレスアンカーをポップアップ表示する

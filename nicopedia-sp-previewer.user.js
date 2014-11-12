@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name      Nicopedia Smartphone Previewer
+// @name      Nicopedia-Smartphone-Previewer
 // @namespace http://lambda.que.jp/
 // @version   0.1.20141112
 // @description  ニコニコ大百科の記事編集ページにスマートフォン版のプレビューを追加する
