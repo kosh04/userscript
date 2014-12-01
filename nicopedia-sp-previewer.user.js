@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nicopedia-Smartphone-Previewer
 // @namespace    http://lambda.que.jp/
-// @version      0.1.20141113
+// @version      0.1.20141202
 // @description  ニコニコ大百科の記事編集ページにスマートフォン版のプレビューを追加する
 // @grant        GM_addStyle
 // @match        http://dic.nicovideo.jp/p/a/*
@@ -17,6 +17,12 @@
 
 (function($) {
     "use strict";
+
+    var $article = $('#nicopedia-article-textarea');
+
+    if ($article.length === 0) {
+        return;
+    }
 
     GM_addStyle([
         '.sp-window { padding: 5px; }',
@@ -50,7 +56,7 @@
         '</head>',
         '<body>',
         '<div class="article">',
-        $('#nicopedia-article-textarea').text(),
+        $article.text(),
         '</div>',
         '</body>',
         '</html>'
