@@ -7,6 +7,8 @@
 // @grant   GM_getResourceText
 // @match   http://www.newlisp.org/*/newlisp_manual.html
 // @match   http://www.newlisp.org/*/CodePatterns.html
+// @match   http://newlisp.nfshost.com/*/newlisp_manual.html
+// @match   http://newlisp.nfshost.com/*/CodePatterns.html
 // @require http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js
 // @require http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js
 // @require http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/languages/lisp.min.js

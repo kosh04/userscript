@@ -6,6 +6,7 @@
 // @grant   GM_addStyle
 // @grant   GM_getResourceText
 // @match   http://www.newlisp.org/*/newlisp_manual.html
+// @match   http://newlisp.nfshost.com/*/newlisp_manual.html
 // @require http://code.jquery.com/jquery-2.1.1.js
 // @require http://code.jquery.com/ui/1.11.1/jquery-ui.js
 // @resource jquery-ui.css http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css
