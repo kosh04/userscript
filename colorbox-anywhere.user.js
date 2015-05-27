@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         colorbox-anyware
+// @name         colorbox-anywhere
 // @namespace    http://lambda.que.jp/userscript
 // @version      0.1.20150527
 // @description  Colorbox (a jQuery lightbox plugin) with any web page.
