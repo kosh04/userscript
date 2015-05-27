@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         colorbox-anyware
 // @namespace    http://lambda.que.jp/userscript
-// @version      0.1.20150429
+// @version      0.1.20150527
 // @description  Colorbox (a jQuery lightbox plugin) with any web page.
 // @grant        GM_getResourceText
 // @grant        GM_getResourceURL
@@ -50,10 +50,12 @@ function enable_colorbox() {
         return this.href.match(/\.(jpe?g|png|gif)$/i);
     }).colorbox({
         rel:'group1',
-        height: "85%",
-        slideshow:false,
+        height: "100%",
+        slideshow: false,
         title: function() {
-            return $(this).attr('title');
+            return $(this).attr('title')
+                || $(this).attr('alt')
+                || $(this).text();
         }
     });
 }
