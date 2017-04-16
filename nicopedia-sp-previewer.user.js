@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nicopedia-Smartphone-Previewer
 // @namespace    http://lambda.que.jp/
-// @version      0.1.20141202
+// @version      0.1.20160116
 // @description  ニコニコ大百科の記事編集ページにスマートフォン版のプレビューを追加する
 // @grant        GM_addStyle
 // @match        http://dic.nicovideo.jp/p/a/*
@@ -10,7 +10,13 @@
 // @match        http://dic.nicovideo.jp/p/l/*
 // @match        http://dic.nicovideo.jp/p/u/*
 // @match        http://dic.nicovideo.jp/p/c/*
-// @require      http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+// @match        https://dic.nicovideo.jp/p/a/*
+// @match        https://dic.nicovideo.jp/p/v/*
+// @match        https://dic.nicovideo.jp/p/i/*
+// @match        https://dic.nicovideo.jp/p/l/*
+// @match        https://dic.nicovideo.jp/p/u/*
+// @match        https://dic.nicovideo.jp/p/c/*
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 // @author       kosh (mono)
 // @license      Public domain
 // ==/UserScript==
