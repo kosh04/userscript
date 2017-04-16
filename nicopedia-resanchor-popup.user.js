@@ -1,16 +1,17 @@
 // ==UserScript==
 // @name      Nicopedia-Resanchor-Popup
 // @namespace http://lambda.que.jp/
-// @version   0.1.20141112
+// @version   0.1.20170416
 // @description  ニコニコ大百科 掲示板のレスアンカーをポップアップ表示する
 // @grant     GM_addStyle
 // @grant     GM_getResourceURL
 // @grant     GM_getResourceText
 // @match     http://dic.nicovideo.jp/*
-// @require   http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js
-// @require   http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js
-// @resource  jquery-ui.css http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/css/jquery-ui.css
-// @resource  images/ui-bg_flat_75_ffffff_40x100.png http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/css/images/ui-bg_flat_75_ffffff_40x100.png
+// @match     https://dic.nicovideo.jp/*
+// @require   https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js
+// @require   https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js
+// @resource  jquery-ui.css https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/css/jquery-ui.css
+// @resource  images/ui-bg_flat_75_ffffff_40x100.png https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/css/images/ui-bg_flat_75_ffffff_40x100.png
 // @author    kosh (mono)
 // @license   Public domain
 // ==/UserScript==
@@ -40,7 +41,7 @@ function getAnchorContent(id, context) {
     if ($anchor.length === 0) {
         return null;
     }
-    
+
     var $parent = $anchor.parent();
     return "<dl>" + /*dt*/ $parent[0].outerHTML + /*dd*/ $parent.next()[0].outerHTML + "</dl>";
 }
