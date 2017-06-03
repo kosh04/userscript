@@ -1,7 +1,6 @@
 // ==UserScript==
 // @name      Nicopedia-Resanchor-Popup
 // @namespace http://lambda.que.jp/
-// @version   0.1.20170416
 // @description  ニコニコ大百科 掲示板のレスアンカーをポップアップ表示する
 // @grant     GM_addStyle
 // @grant     GM_getResourceURL
@@ -32,7 +31,7 @@ function getAnchorContent(id, context) {
     var $anchor, doc = document;
     // jQueryによるHTML解析は<script>が実行されるらしい
     // var $anchor = $(context || document).find("a[name=" + id + "]");
-    
+
     if (typeof context === "string") {
         var parser = new DOMParser();
         doc = parser.parseFromString(context, "text/html");
@@ -59,7 +58,7 @@ $("dd.resbody a.dic").filter(function() {
             popup = function(content) {
                 $elem.tooltip("option", "content", content);
             };
-        if (content) {
+        if (content && !content.includes("全て読むにはこのリンクをクリック！")) {
             // console.log("同じページ");
             popup(content);
         } else {
