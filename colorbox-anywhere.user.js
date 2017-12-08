@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         colorbox-anywhere
-// @namespace    http://lambda.que.jp/userscript
-// @version      0.1.20150527
+// @namespace    https://github.com/kosh04/userscript
+// @version      0.1.20171208
 // @description  Colorbox (a jQuery lightbox plugin) with any web page.
 // @grant        GM_getResourceText
 // @grant        GM_getResourceURL
@@ -17,15 +17,16 @@
 // @resource     images/loading.gif   https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example1/images/loading.gif
 // @resource     images/loading_background.png  https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example1/images/loading_background.png
 // @resource     images/overlay.png   https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.4.33/example1/images/overlay.png
-// @author    KOBAYASHI Shigeru (kosh)
-// @copyright 2015 kosh
+// @author       KOBAYASHI Shigeru (kosh)
+// @copyright    2015-2017 kosh
 // ==/UserScript==
 
 // TODO
 // - Avoid conflict other lightbox plugin
 
 function escapeRegExp(string) {
-  return string.replace(/([.*+?^=!:${}()|[\]\/\\])/g, "\\$1");
+    var re = new RegExp("([.*+?^=!:${}()|[\]/\\\\])", "g");
+    return string.replace(re, "\\$1");
 }
 
 function enable_colorbox() {
@@ -46,16 +47,23 @@ function enable_colorbox() {
 
     GM_addStyle(css);
 
-    $("a").filter(function() {
-        return this.href.match(/\.(jpe?g|png|gif)$/i);
-    }).colorbox({
+    var $a = $("a").filter(function() {
+        var path = new URL(this.href).pathname; // trim query string
+        return path.match(/\.(jpe?g|png|gif)$/i);
+    });
+    alert(`Found ${$a.length} items.`);
+
+    $a.colorbox({
         rel:'group1',
         height: "100%",
         slideshow: false,
         title: function() {
-            return $(this).attr('title')
-                || $(this).attr('alt')
-                || $(this).text();
+            var a = $(this);
+            var img  = a.find("img");
+            return img.attr("title") ||
+                img.attr("alt") ||
+                img.attr("src") ||
+                a.text();
         }
     });
 }
