@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Nicopedia-Smartphone-Previewer
 // @namespace    http://lambda.que.jp/
-// @version      0.1.20180416
+// @version      0.1.20180418
 // @description  ニコニコ大百科の記事編集ページにスマートフォン版のプレビューを追加する
 // @grant        GM_addStyle
 // @match        http://dic.nicovideo.jp/p/a/*
@@ -101,7 +101,7 @@
     });
 
     $("#sp-device-list").change((e) => {
-        const {width, heigth} = e.target[e.target.selectedIndex].dataset;
+        const {width, height} = e.target[e.target.selectedIndex].dataset;
         $view.css({
             width:  `${width}px`,
             height: `${height}px`
