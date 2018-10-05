@@ -1,17 +1,17 @@
 // ==UserScript==
-// @name      newLISP-Documentation-Search
-// @namespace http://lambda.que.jp/
-// @version   20141001
+// @name         newLISP-Documentation-Search
+// @namespace    https://github.com/kosh04/userscript
+// @version      20141001
 // @description  Provide keyword search interface in newLISP documentation
-// @grant   GM_addStyle
-// @grant   GM_getResourceText
-// @match   http://www.newlisp.org/*/newlisp_manual.html
-// @match   http://newlisp.nfshost.com/*/newlisp_manual.html
-// @require http://code.jquery.com/jquery-2.1.1.js
-// @require http://code.jquery.com/ui/1.11.1/jquery-ui.js
+// @grant        GM_addStyle
+// @grant        GM_getResourceText
+// @match        http://www.newlisp.org/*newlisp_manual.html
+// @match        http://newlisp.nfshost.com/*newlisp_manual.html
+// @require      http://code.jquery.com/jquery-2.1.1.js
+// @require      http://code.jquery.com/ui/1.11.1/jquery-ui.js
 // @resource jquery-ui.css http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css
-// @author  KOBAYASHI Shigeru (kosh)
-// @license Public domain
+// @author       KOBAYASHI Shigeru (kosh)
+// @license      Public domain
 // ==/UserScript==
 
 GM_addStyle([

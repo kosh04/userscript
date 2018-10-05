@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         StackExchange-Show-Relativetime
-// @namespace    http://lambda.que.jp/userscript
+// @namespace    https://github.com/kosh04/userscript
 // @version      0.1.20150428
 // @description  Replace .user-action-time/.comment-date to relativetime in StackExchange
 // @grant        none
-// @match        http://stackoverflow.com/*
-// @match        http://*.stackoverflow.com/*
-// @match        http://stackexchange.com/*
-// @match        http://*.stackexchange.com/*
+// @match        https://stackoverflow.com/*
+// @match        https://*.stackoverflow.com/*
+// @match        https://stackexchange.com/*
+// @match        https://*.stackexchange.com/*
 // @require      none
 // @author       KOBAYASHI Shigeru (kosh)
 // @license      Public domain

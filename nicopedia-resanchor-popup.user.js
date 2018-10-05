@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name      Nicopedia-Resanchor-Popup
-// @namespace http://lambda.que.jp/
+// @namespace https://github.com/kosh04/userscript
+// @version   0.20170604
 // @description  ニコニコ大百科 掲示板のレスアンカーをポップアップ表示する
 // @grant     GM_addStyle
 // @grant     GM_getResourceURL

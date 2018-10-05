@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Nicopedia-Smartphone-Previewer
-// @namespace    http://lambda.que.jp/
+// @namespace    https://github.com/kosh04/userscript
 // @version      0.1.20180418
 // @description  ニコニコ大百科の記事編集ページにスマートフォン版のプレビューを追加する
 // @grant        GM_addStyle

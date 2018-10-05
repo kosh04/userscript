@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Nicopedia-Redefine-MMLPlayer
-// @namespace    http://lambda.que.jp/
+// @namespace    https://github.com/kosh04/userscript
 // @version      0.1.20141113
 // @description  ニコニコ大百科 ピコカキコプレーヤーの読み込み位置を正しくする
 // @grant        GM_addStyle
