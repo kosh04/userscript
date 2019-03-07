@@ -1,15 +1,9 @@
 // ==UserScript==
 // @name         Nicopedia-Smartphone-Previewer
 // @namespace    https://github.com/kosh04/userscript
-// @version      0.1.20180418
+// @version      0.2.20190308
 // @description  ニコニコ大百科の記事編集ページにスマートフォン版のプレビューを追加する
 // @grant        GM_addStyle
-// @match        http://dic.nicovideo.jp/p/a/*
-// @match        http://dic.nicovideo.jp/p/v/*
-// @match        http://dic.nicovideo.jp/p/i/*
-// @match        http://dic.nicovideo.jp/p/l/*
-// @match        http://dic.nicovideo.jp/p/u/*
-// @match        http://dic.nicovideo.jp/p/c/*
 // @match        https://dic.nicovideo.jp/p/a/*
 // @match        https://dic.nicovideo.jp/p/v/*
 // @match        https://dic.nicovideo.jp/p/i/*
@@ -19,7 +13,14 @@
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
 // @author       kosh (mono)
 // @license      Public domain
+// @noframes
 // ==/UserScript==
+
+// ChangeLog
+// =========
+// * 0.2.20190308 PC版サイトのデザインリニューアルに伴うCSSセレクタの修正
+
+/* global jQuery, $ */
 
 (function($) {
     "use strict";
@@ -67,7 +68,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/style.css?s=104">
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 <div id="top" class="bs-Wrapper">
@@ -87,7 +88,7 @@
 </html>
 `;
 
-    $("#article-tab-nico").before(html);
+    $(".article").before(html);
     // $("#sp-view").addClass("resizable");
     $("#sp-view > iframe").attr("srcdoc", srcdoc);
 
