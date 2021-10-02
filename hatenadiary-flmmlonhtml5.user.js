@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Hatena::Diary FlMMLonHTML5
+// @name         Hatena::Diary FlMMLonHTML5 (Deprecated)
 // @namespace    https://github.com/kosh04/userscript
 // @version      0.20181016
 // @description  はてなダイアリーのメロディ再生記法を FlMMLonHTML5 プレイヤーで再生する

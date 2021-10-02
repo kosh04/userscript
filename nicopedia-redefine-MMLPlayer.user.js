@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Nicopedia-Redefine-MMLPlayer
+// @name         Nicopedia-Redefine-MMLPlayer (Deprecated)
 // @namespace    https://github.com/kosh04/userscript
 // @version      0.1.20141113
 // @description  ニコニコ大百科 ピコカキコプレーヤーの読み込み位置を正しくする
